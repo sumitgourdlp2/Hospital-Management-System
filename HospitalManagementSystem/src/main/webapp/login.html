@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+</head>
+<style>
+	table{
+		box-sizing: 2px 2px 5px gainsboro , -2px -2px 5px gainsboro;
+	}
+		
+	input{
+		width: 90%;
+		height: 25px;
+		border-radius: 10px;
+		border: 0.5px solid gainsboro;
+		transition: transform 1s;
+	}	
+	
+	input:focus{
+		border: 0.5px solid lightblue;		
+	}
+	input:hover{
+		transform: scale(1.1);	
+	}
+	
+		button{ 
+			margin:15px; 
+			width: 70%; 
+			height:30px ; 
+			border-radius: 10px; 
+			border:none; 
+			background-color: lightblue; 
+			color:white; 
+			transition: transform .7s;
+		}
+		button:hover{ 
+					transform: scale(1.2); 
+					background-color:blue; 
+					}
+</style>
+<body style="background-color:#040720;">
+    <h1 style="text-align: center; color: white;">LogIn</h1>
+    <form action="login" method="post">
+    <table align="center" style="background-color: white; width: 250px; height: 300px; padding-left: 8px; border-radius: 10px;" cellpadding="5">
+        <tr>
+            <td><b>Email or Phone:</b></td>
+        </tr>
+        <tr>
+            <td><input type="email" name="email" placeholder="Email or Phone" required></td>  
+        </tr>
+        <tr>
+            <td><b>Password:</b></td>
+        </tr>
+        <tr>
+            <td><input type="password" name="password" placeholder="Password" required></td>  
+        </tr>
+        <tr> 
+            <td align="center"><button>LogIn</button></td>
+        </tr>
+    </table>
+    </form><br><br>
+    <div align="center">
+        <a href="./singup.html"  style="color: gainsboro;" >SignUp</a>
+    </div>
+</body>
+</html>

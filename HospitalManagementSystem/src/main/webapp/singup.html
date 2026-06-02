@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        table{
+        		width: 400px;
+        		height:400px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 20px black, -2px -2px 20px black ;
+            tr{
+                border: none;
+            }
+        }
+        input {
+		width: 90%;
+		height: 30px;
+		border-radius: 10px;
+		border: none;		
+	}
+			#btn{ 
+			margin:15px; 
+			width: 70%; 
+			height:30px ; 
+			border-radius: 10px; 
+			border:none; 
+			background-color: lightblue; 
+			color:white; 
+			transition: transform .7s;
+		}
+		#btn:hover{ 
+					transform: scale(1.2); 
+					background-color:blue; 
+					}
+			button{ 
+			margin:15px; 
+			width: 150px ; 
+			height:30px ; 
+			border-radius: 10px; 
+			border:none; 
+			background-color: lightblue; 
+			color:white; 
+			transition: transform .7s;
+		}
+		button:hover{ 
+					transform: scale(1.2); 
+					background-color:blue; 
+					}
+	
+    </style>
+</head>
+<body style="background-color:#040720;">
+	<h1 style="text-align: center; color: white">SignUp Form</h1>
+    <table align="center" style="border-collapse: collapse; background-color:  rgb(128, 128, 128);	; " cellpadding="10" >
+        <form action="signup">
+        <tr>
+            <td><b>Username</b></td>
+            <td><input type="text" placeholder="Username" required name="name"></td>
+        </tr>
+        <tr>
+            <td><b>Email</b></td>
+            <td><input type="email" placeholder="example@gmail.com" required name="email"></td>
+        </tr>
+        <tr>
+            <td><b><label for="">Password</label></b></td>
+            <td><input type="password" placeholder="example@1234" required name="password"></td>
+        </tr>
+        <tr>
+            <td><b>Mobile</b></td>
+            <td><input type="tel" pattern="[0-9]{10}" placeholder="mobile" name="number" required></td>
+        </tr>
+        <tr>
+            <td >
+            <input id="btn"  type="reset" value="Clear">
+            </td>
+            <td>
+                <input id="btn" type="submit" value="Sign Up">            
+            </td>
+        </tr>
+        </form> 
+    </table>
+                <a href="./login.html"> <button>Back To Login</button> </a>
+</body>
+</html>
