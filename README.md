@@ -50,8 +50,9 @@ javac src/*.java
 
 3. Run the application:
 ```bash
-java -cp src MainClass
+src/main/webapp/signup.html
 ```
+Deploy on Apache Tomcat Server
 
 ### Configuration
 
